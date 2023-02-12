@@ -47,9 +47,21 @@ function App() {
 
       <section class="hero is-large is-info">
         <div class="hero-body">
-          <p class="title">Text-Hero</p>
+          <p class="title">Hi, I'm Jack. Nice to meet you!</p>
+          <p class="subtitle">
+            Since embarking on my jounry as a junior developer I have always
+            been driven by a passion for creating simple innovative solutions.
+            With a background in mechatronic engineering, I have developed the
+            skills to turn complex problems into simple, yet effective software.
+            Here, you will ejoy interacting with some of my most recent projects
+            and the technologies I have used to build them. My goal is to
+            continuously improve my skills and knowledge, and to work on
+            projects that make a positive impact on society.
+          </p>
         </div>
       </section>
+
+      <section class="section is-large"></section>
     </div>
   );
 }
