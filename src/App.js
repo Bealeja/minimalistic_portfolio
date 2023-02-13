@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import nav_bar from "./nav_bar/index";
 import "bulma/css/bulma.min.css";
 import J_icon from "./assets/slack.png";
-import portrait from "./assets/portrait2.png";
+import portrait from "./assets/portrait4.png";
 
 function App() {
   return (
@@ -37,13 +37,14 @@ function App() {
         </h1>
         <br></br>
         <h2 class="subtitle has-text-centered">I like making things</h2>
+        <div class="card-image has-text-centered">
+          <figure class="image is-inline-block">
+            <img src={portrait} />
+          </figure>
+        </div>
       </section>
 
-      <section class="section is-small is-family-monospace">
-        <figure class="image is-128x128">
-          <img src={portrait} />
-        </figure>
-      </section>
+      <section class="section is-small is-family-monospace"></section>
 
       <section class="hero is-large is-info">
         <div class="hero-body">
