@@ -3,11 +3,15 @@ import nav_bar from "./nav_bar/index";
 import "bulma/css/bulma.min.css";
 import J_icon from "./assets/slack.png";
 import portrait from "./assets/portrait4.png";
+import icons from "./assets/pretty_icons.png";
+import skills from "./assets/skill_image.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faImage } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   return (
     <div>
-      <div className="container">
+      <div class="container">
         <section class="section is-small">
           <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-start">
@@ -32,7 +36,7 @@ function App() {
       </div>
 
       <section class="section is-small">
-        <h1 class="has-text-centered has-text-weight-bold is-family-monospace is-size-2">
+        <h1 class="title is-spaced is-size-1-desktop">
           Designer, Full-Stack Developer & Learner
         </h1>
         <br></br>
@@ -44,25 +48,44 @@ function App() {
         </div>
       </section>
 
-      <section class="section is-small is-family-monospace"></section>
+      <div class="card-image has-text-centered">
+        <figure class="image is-inline-block">
+          <img src={icons} />
+        </figure>
+      </div>
 
-      <section class="hero is-large is-info">
-        <div class="hero-body">
-          <p class="title">Hi, I'm Jack. Nice to meet you!</p>
-          <p class="subtitle">
-            Since embarking on my jounry as a junior developer I have always
-            been driven by a passion for creating simple innovative solutions.
-            With a background in mechatronic engineering, I have developed the
-            skills to turn complex problems into simple, yet effective software.
-            Here, you will ejoy interacting with some of my most recent projects
-            and the technologies I have used to build them. My goal is to
-            continuously improve my skills and knowledge, and to work on
-            projects that make a positive impact on society.
-          </p>
+      <section class="hero is-large is-info has-text-centered">
+        <div class="container">
+          <div class="hero-body">
+            <p class="title">Hi, I'm Jack. Nice to meet you!</p>
+            <p class="subtitle">
+              Since embarking on my journey as a junior developer I have always
+              been driven by a passion for creating simple innovative solutions.
+              My goal is to continuously improve my skills and knowledge, and to
+              work on projects that make a positive impact on society.
+            </p>
+          </div>
         </div>
       </section>
-
-      <section class="section is-large"></section>
+      <section class="section has-text-centered">
+        <div class="container is-narrow">
+          <div class="box">
+            <div class="columns is-centered">
+              <div class="column">
+                <FontAwesomeIcon icon={faImage} />
+                <p class="title">column 1</p>
+              </div>
+              <div class="column">
+                <p class="title">column 2</p>
+              </div>
+              <div class="column">
+                <p class="title">column 3</p>
+              </div>
+            </div>
+          </div>
+          <section class="section is-large"></section>
+        </div>
+      </section>
     </div>
   );
 }
